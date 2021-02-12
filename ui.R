@@ -5,7 +5,8 @@ basicPage(
     # right in the h4, without starting a new line.
     textOutput("currentTime", container = span)
   ),
-  selectInput("interval", "Update:", c(
+  selectInput("interval", "Update time every:", c(
+    "10 seconds" = "10000",
     "5 seconds" = "5000",
     "1 second" = "1000",
     "0.5 second" = "500"
